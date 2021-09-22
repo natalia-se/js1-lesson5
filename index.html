@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        let greeting = "Hello";
+        console.log(greeting);
+        function myFunction(){
+            console.log("on click");
+            document.getElementById("demo").innerHTML = "ghfuyufuguyguyg";
+            // const parent = document.getElementsByTagName
+        }
+
+        function onHower(){
+            console.log("on hower");
+        }
+    </script>
+  </head>
+  <body>
+    <h1 onmouseover="onHower()" onclick="myFunction()">Hello world</h1>
+    <h2>Rubric</h2>
+    <p id="demo">
+
+    </p>
+    <a href="#form" target="_blank">Link to formular</a>
+    <p>
+        I'm learning <i>HTML</i> <br/>
+        <hr/>
+      <a href="https://say7.info" target="_blank">Link</a>
+      <img
+        alt="Cake"
+        src="https://cdn.pixabay.com/photo/2017/05/23/22/33/birthday-2338813_1280.jpg"/>
+    </p>
+    <form id="form">
+        <hr/>
+
+        <label for="firstName">Your name</label>
+        <input id="firstName" placeholder="first name"/>
+
+        <label for="lastName">Your last name</label>
+        <input id="lastName"/>
+
+        <div>
+            <label for="phone">Phone number</label>
+            <input id="phone" name=phone type="tel"/>
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input id="password" name=password type="password"/>
+        </div>
+
+        <div>
+            <label>Date</label>
+            <input id="date" name=date type="date"/>
+        </div>
+
+        <div>
+            <label>Choose your car</label>
+            <select id="cars" name="cars">
+                <option value="1" selected>Volvo</option>
+                <option value="1">Saab</option>
+                <option value="1">Audi</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Choose your favourit fruct</label>
+            <select id="fructs" name="fructs" multiple>
+                <option value="1" selected>Volvo</option>
+                <option value="1">Saab</option>
+                <option value="1">Audi</option>
+            </select>
+        </div>
+
+        <div>
+            <labelfor "lifeStory">Your life story</labelfor>
+            <textarea row="10" cols="50" name="lifeStory" id="lifeStory"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
